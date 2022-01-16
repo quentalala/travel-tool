@@ -10,7 +10,7 @@ export default makeStyles((theme) => ({
   toolbar: {
     display: "flex",
     justifyContent: "space-between",
-    backgroundColor: "#CFD8DC",
+    backgroundColor: "#78909C",
   },
   searchIcon: {
     padding: theme.spacing(0, 2),
