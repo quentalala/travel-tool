@@ -8,7 +8,19 @@ import Map from "./components/Map/Map";
 import { getPlacesData } from "./api";
 
 const App = () => {
-  const [places, setPlaces] = useState([]);
+  const [places, setPlaces] = useState([
+    {
+      name: "test1",
+      photo: '"https://en.wikipedia.org/wiki/File:Krusty_Krab_230b.png"',
+    },
+    { name: "test2" },
+    { name: "test3" },
+    { name: "test4" },
+    { name: "test5" },
+    { name: "test6" },
+    { name: "test7" },
+    { name: "test8" },
+  ]);
   const [coordinates, setCoordinates] = useState({});
   const [boundaries, setBoundaries] = useState(null);
 
@@ -20,14 +32,13 @@ const App = () => {
     );
   }, []);
 
-  useEffect(() => {
-    console.log(coordinates, boundaries);
-    getPlacesData().then((data) => {
-      console.log(data);
-      setPlaces(data);
-      console.log(places);
-    });
-  }, [coordinates, boundaries]);
+  // useEffect(() => {
+  //   console.log(coordinates, boundaries);
+  //   getPlacesData().then((data) => {
+  //     console.log(data);
+  //     setPlaces(data);
+  //   });
+  // }, [coordinates, boundaries]);
 
   return (
     <>

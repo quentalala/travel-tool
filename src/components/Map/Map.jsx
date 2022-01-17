@@ -22,13 +22,13 @@ const Map = ({ setCoordinates, setBoundaries, coordinates }) => {
         defaultZoom={14}
         margin={[50, 50, 50, 50]}
         options={""}
-        onChange={(event) => {
-          setCoordinates({ lat: event.center.lat, lng: event.center.lng });
-          setBoundaries({
-            ne: event.marginBounds.ne,
-            sw: event.marginBounds.sw,
-          });
-        }}
+        // onChange={(event) => {
+        //   setCoordinates({ lat: event.center.lat, lng: event.center.lng });
+        //   setBoundaries({
+        //     ne: event.marginBounds.ne,
+        //     sw: event.marginBounds.sw,
+        //   });
+        // }}
         onChildClick={""}
         // Used when you click on the map
       ></GoogleMapReact>
